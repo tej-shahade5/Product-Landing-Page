@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Montserrat';
+}
+
+/* Navbar Section */
+
+#header {
+    padding: 1% 14%;
+    background-color: #D8D2CB;
+    position:fixed;
+    text-align: center;
+}
+
+#header-img {
+    width: 30%;
+    float: left;
+    margin-right: 25%;
+}
+
+.nav-link {
+    padding: 1% 0 1% 0;
+}
+
+.nav-link a {
+    margin: 2%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+    font-family: 'ubuntu';
+}
+
+.nav-link a:hover {
+    color: orange;
+}
+
+/* Subcribe Section */
+
+#subcribe {
+    padding: 7% 14% 7%;
+    background-color: #D8D2CB;
+    text-align: center;
+}
+
+#subcribe h2 {
+    font-size: 1.8rem;
+}
+
+#email {
+    padding: 1% 8% 1% 1%;
+    margin: 2%;
+    font-family: 'ubuntu';
+    border-radius: 5px;
+}
+
+#submit {
+    padding: 1% 3%;  
+    background-color: rgb(245, 245, 108);
+    border: none ;
+    transition: 0.3s ease;
+    font-family: 'ubuntu';
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: orange;   
+}
+
+/* Features Section */
+
+#features {
+    background-color: #EEEEEE;
+    padding: 7% 14%;
+}
+
+.icons {
+    float: left;
+    margin-right: 3%; 
+    color: orange; 
+}
+
+.container {
+    padding: 3% 1%;
+}
+
+.content {
+    margin-left: 7%;
+    text-align: left;
+}
+
+.content p {
+    color: #636262;
+    margin-top: 1%;
+    font-family: 'ubuntu';
+}
+
+/* How It Works */
+
+#hiw {
+   padding: 5% 15%;
+   background-color: #D8D2CB;
+   text-align: center;
+}
+
+#video {
+    width: 600px;
+    height: 355px;
+}
+
+/* Pricing Section */
+
+#pricing {
+    padding: 6% 12%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+    margin: 1% 2%;
+}
+
+.card-head {
+    background-color: #D8D2CB;
+    font-family: 'Montserrat';
+    padding: 4% 10%;
+    text-align: center;
+}
+
+.card-body {
+    text-align: center;
+    padding: 4% 8%;
+    font-family: 'ubuntu';
+    line-height: 1.5;
+}
+
+h3 {
+    padding: 3%;  
+}
+
+.btn {
+    text-align: center;
+    font-family: 'ubuntu';
+    background-color: rgb(245, 245, 108);
+    transition: 0.3s ease;
+    border-radius: 5px;
+    border: none;
+    padding: 3% 5%;
+    margin: 3%;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+
+/* Footer Section */
+
+#footer {
+    padding: 3% 14%;
+    background-color: #D8D2CB;
+    font-family: 'ubuntu';
+}
+
+.foot-link a {
+    padding: 2% 3% 2% 2%;
+    text-decoration: none;
+    color: #000;
+}
+
+.foot-link a:hover {
+    color: orange;
+}
+
+.foot-link p {
+    padding: 2%;
+}
+
+/* Media Queries */
+
+@media (max-width: 1112px) {
+    /* Navbar Section */
+    #header-img {
+        float: none;
+        text-align: center;
+        width: 40%;
+        margin: 0%;
+    }
+
+    /* Subcribe Section */
+    #subcribe {
+        padding: 12% 14% 7%;
+    }
+
+    /* Pricing Section */
+    #pricing {
+        padding: 5% 7%;
+    }
+
+    .cards {
+        width: 60%;
+    }
+
+}
+
+@media (max-width:800px) {
+    /* Navbar Section */
+    #header-img {
+        width: 50%;
+    }
+
+    /* How It Works */
+    #hiw {
+        padding: 3% 5%;    
+    }
+
+    /* Pricing Section */
+    #pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5%;
+    }
+
+    .cards {
+        align-items: center;
+        width: 70%;
+        margin-top: 5%;
+    }
+
+    /* Footer Section */
+    #footer  {
+        padding: 5% 12%;
+    }
+}
+
+@media (max-width: 662px) {
+    /* Navbar Section */
+    #header-img {
+        width: 60%;
+    }
+
+    /* Subcribe Section */
+    #subcribe {
+        padding: 15% 14% 7%;
+    }
+
+    /* How It Works */
+    #hiw {
+        padding: 0;
+    }
+
+    #video {
+        width: 480px;
+        height: 315px;
+    }
+
+    /* Pricing Section */
+    .cards {
+        width: 90%;
+    }
+
+    /* Footer Section */
+    #footer  {
+        padding: 7% 8%;
+    }
+}
